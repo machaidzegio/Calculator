@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="margin-top: 100px">
+      <h1 style="text-align: center">კალკულატორი</h1>
+      <form
+        action=""
+        style="
+          max-width: 300px;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        "
+      >
+        <div>
+          <input
+            type="number"
+            id="num1-input"
+            value=""
+            required
+            style="width: 35px; padding: 5px 5px 5px 8px"
+          />
+          <select
+            name=""
+            id="arithmetika-input"
+            required
+            style="width: 45px; padding: 5px 5px 5px 8px"
+          >
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+          </select>
+          <input
+            type="number"
+            id="num2-input"
+            value=""
+            required
+            style="width: 35px; padding: 5px 5px 5px 8px"
+          />
+        </div>
+        <button onclick="kalk()">დაანგარიშე</button>
+        <!-- <p id="udris"></p> -->
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
